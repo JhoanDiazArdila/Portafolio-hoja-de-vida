@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido</title>
+    <link rel="stylesheet" href="curriculum.css">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay muted loop id="bg-video">
+            <source src="Video fondo.mp4" type="video/mp4">
+            Tu navegador no soporta videos HTML5.
+        </video>
+    </div>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#quiene">Quien soy</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <p class="gracias"> Gracias por visitar</p>
+    <section class="contenedor-nombre">
+        <div>
+            <h1 class="border-name border-bottom margen-nombre">
+                <strong>Jhoan Sebastian <br>Diaz Ardila</strong>
+            </h1>
+            <img class="cubo" src="Cubo.gif" alt="">
+        </div>
+        <div>
+            <img class="perfil" src="perfil.png" alt="Foto-del-dueño">
+        </div>
+    </section>
+    <section>
+        <div class="quien">
+            <p id="quiene" class="Titulo-quien">QUIEN SOY</p>
+            <img src="circulo.gif" alt="imagen decorativa" id="gif-1">
+        </div>
+        <div>
+            <p id="ultimalinea" class="contenido">
+            Apasionado por la innovación y la creación de nuevas estructuras que permitan visualizar, <br> proyectar e interpretar los deseos, necesidades de las diversas situaciones cotidianas <br> y requerimientos de expresión con múltiples culturas emprendí un viaje para comprender <br> las vías más certeras para expresarnos como especie. La tecnología abrió este campo <br> como lenguaje universal y por ende aprovecho esta ventaja <br> para estudiar programación como método de expresión universal. <br>
+            Mucho gusto… Tu frontend de confianza.
+            </p>
+        </div>
+    </section>
+    <section id="proyectos" class="espacio-tabla">
+        <table class="estilo-tabla">
+            <thead>
+                <tr>
+                    <th colspan="3" class="Titulo-proyecto">PROYECTOS</th>
+                </tr>
+                <tr>
+                    <td>PYTHON <br> <a href="https://github.com/JhoanDiazArdila/FINAL-PHYTON"><img src="imgPython.png" alt="no disponible"></a></td>
+                    <td>HTML & CSS <br> <img src="css.png" alt="no disponible"></td>
+                    <td>EXTRAS <br> <img src="libros.png" alt="no disponible"></td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td> 
+                        Creacion de programa para la administracion de Estudiantes en Campuslands.
+                    </td>
+                    <td> 
+                        Creacion de pagina web personalizada en base de Curriculum Vitae.
+                    </td>
+                    <td> 
+                        Control, seguimiento y monitoreo de informacion turistica en puntos de informacion para la Universidad de Barcelona.
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+    <div >
+        <h2 id="servicios" class="Titulo-servicios">SERVICIOS</h2>
+        <section class="contenedor">
+            <div>
+                <p class="title">CONSULTORIAS</p>
+                <img class="imag-1" src="consultoria.png" alt="no disponible">
+                <p>
+                    Con el apoyo que usted merece para cumplir sus expectativas en el mundo de la tecnologia, le ayudare abrirse paso por los obstaculos y encontrar el camino mas corto para alcanzar sus metas.
+                </p>
+            </div>
+            <div>
+                <img class="imag-2" src="hack.png" alt="no disponible">
+                <p class="title" >ALIENACION DE SEGURIDAD WEB</p> <br>
+                <p>
+                    Todo problema conlleva desafios, sere yo quien navegue por el mar de situaciones que usted no ha logrado, ninguna barrera es imposible de superar y ninungun sistema infalible para una mano experta.
+                </p>
+            </div>
+            <div>
+                <p class="title">CREACION DE PAGINAS WEB</p>
+                <img class="imag-3" src="creacion.png" alt="no disponible">
+                <p>
+                    Aun no visibiliza esa pagina de sus sueños? <br>
+                    Ya puede verla pero no sabe como plasmarla? <br>
+                    Todo lo que pueda querer en la Web puede ser suyo, ventas, productos, catalogos, consultorias y mucho mas puede mostrar su exito a solo 1 click de distancia.
+                </p>
+            </div>
+        </section>
+    </div>
+    <section id="contacto" class="formulario">
+        <p class="Titulo-contactame">CONTACTAME</p>
+        <form action="Datos.html" name="Datos-contacto" method="post" autocomplete="on" target="_blank">
+            <div>
+                Nombre: <input type="text" name="name" placeholder="Your Name"> <br>
+                Email: <input type="email" name="email"> <br>
+                Numero de Contacto: <input type="number" name="phone"> <br>
+                Pais: 
+                <select id="country" name="country" aria-placeholder="Your Country">
+                    <option value="co">(+57) Colombia</option>
+                    <option value="mx">(+21) México</option>
+                    <option value="us">(+1) Estados Unidos</option>
+                    <option value="ca">(+1) Canadá</option>
+                </select>
+            </div>
+            <div>
+                <label for="start">Fecha de nacimiento:</label>
+                <input type="date" id="start" name="start" max="2006-06-20">
+            </div>
+            
+            <div>
+                Genero: <br>
+                <input type="radio" name="gen" value="M"> Hombre
+                <input type="radio" name="gen" value="F"> Mujer
+                <input type="radio" name="gen" value="NB"> No Binario
+                <input type="radio" name="gen" value="Other"> Otro 
+            </div>   
+        
+            <div>
+                Servicios: <br>
+                <input type="checkbox"> Consultoria
+                <input type="checkbox"> Hacks
+                <input type="checkbox"> Pagina Web
+                <input type="checkbox"> Otro
+                <br><br>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message"></textarea>
+                
+            </div>
+            <input type="submit">
+        </form>
+        
+    </section>
+
+
+
+</body>
+<footer>
+    <div class="foot-contenido">
+        <p id="final">Agredecimientos a Juan Marino</p>
+    </div>  
+        <div class="animation-container">
+            <img src="transicion1.png" alt="">
+            <img src="transicion2.png" alt="">
+            <img src="transicion3.png" alt="">
+            <img src="transicion4.png" alt="">
+            <img src="transicion5.png" alt="">
+            <img src="transicion6.png" alt="">
+            <img src="transicion7.png" alt="">
+            <img src="transicion8.png" alt="">
+            <img src="transicion9.png" alt="">
+
+
+        </div> 
+    </div>
+    </footer>
+</html>
